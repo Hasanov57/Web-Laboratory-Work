@@ -1,0 +1,827 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+background:#efefef;
+color:#111;
+overflow-x:hidden;
+}
+
+.container{
+width:92%;
+margin:auto;
+}
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 0;
+}
+
+.top-logo{
+width:120px;
+}
+
+/* NAV LINKS */
+.nav-links{
+display:flex;
+align-items:center;
+gap:35px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#111;
+font-size:13px;
+letter-spacing:1.5px;
+}
+
+.btn{
+background:#000;
+color:#fff !important;
+padding:14px 24px;
+border-radius:8px;
+font-size:13px;
+letter-spacing:1px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+}
+
+.btn:visited,
+.btn:hover,
+.btn:active{
+color:#fff !important;
+}
+
+/* HERO */
+.hero{
+min-height:100vh;
+position:relative;
+display:flex;
+align-items:center;
+}
+.hero-bottom{
+position:absolute;
+bottom:30px;
+left:50%;
+transform:translateX(-50%);
+text-align:center;
+}
+
+/* BIG TEXT CENTERED */
+.hero-text{
+font-size:110px;
+font-weight:900;
+line-height:0.95;
+width:60%;
+margin-left:36%;
+}
+
+/* RIGHT SMALL TEXT */
+.hero-right{
+position:absolute;
+right:8%;
+top:45%;
+transform:translateY(-50%);
+text-align:left;
+}
+
+.hero-right p{
+font-size:20px;
+letter-spacing:2px;
+}
+
+/* WORK SEEN ON */
+.work-seen{
+font-size:12px;
+letter-spacing:2px;
+color:#555;
+margin-bottom:20px;
+}
+
+/* FOOTER LOGOS */
+.footer-logos{
+display:flex;
+gap:80px;
+opacity:0.5;
+font-weight:600;
+}
+
+/* HONORS SIDEBAR */
+.honors{
+position:fixed;
+right:0;
+top:50%;
+transform:translateY(-50%);
+background:#000;
+color:#fff;
+padding:18px 10px;
+writing-mode:vertical-rl;
+text-orientation:mixed;
+font-size:12px;
+letter-spacing:2px;
+}
+
+/* ABOUT SECTION */
+.about{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:#efefef;
+}
+
+.about-container{
+width:100%;
+display:flex;
+justify-content:flex-start;
+padding-left:40%;   /* pushes content to right side */
+gap:40px;
+}
+
+/* small "ABOUT" text */
+.about-label{
+font-size:12px;
+letter-spacing:2px;
+margin-top:12px;
+min-width:80px;
+}
+
+/* big paragraph */
+.about-text{
+font-size:40px;
+line-height:1.4;
+max-width:650px;
+font-weight:400;
+}
+
+/* WORK SECTION */
+/* WORK SECTION (FIXED) */
+.work{
+padding:80px 0;
+display:flex;
+flex-direction:column;
+align-items: center;
+gap:60px; /* smaller gap like screenshot */
+}
+
+/* EACH ROW */
+.work-row{
+display:grid;
+grid-template-columns: 1fr 1fr;
+align-items:center;
+gap:40px;
+}
+
+/* TEXT */
+.work-text{
+max-width:300px;
+}
+
+.work-text h3{
+font-size:18px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.work-text p{
+font-size:14px;
+color:#444;
+line-height:1.5;
+}
+
+/* IMAGE */
+.work-row img{
+width:100%;
+max-width:500px;
+filter:grayscale(100%);
+}
+
+/* PROJECTS SECTION */
+.projects{
+padding:80px 0;
+position:relative;
+}
+
+/* top-left small text */
+.projects-label{
+font-size:12px;
+letter-spacing:2px;
+margin-bottom:40px;
+}
+
+/* big list */
+.projects-list{
+width:70%;
+margin-left:30%;
+}
+
+/* each row */
+.project-item{
+font-size:90px;
+font-weight:800;
+padding:10px 0;
+border-bottom:1px solid #ddd;
+}
+
+/* bottom part */
+.projects-bottom{
+margin-top:80px;
+display:flex;
+justify-content:center;
+align-items:flex-end;
+}
+
+.projects-bottom h2{
+font-size:100px;
+font-weight:900;
+line-height:0.9;
+margin-left: auto;
+margin-right: auto;
+}
+
+.projects-bottom span{
+font-size:12px;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+/* PROCESS SECTION */
+.process{
+padding:60px 0;
+}
+
+/* GRID */
+.process-grid{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+gap:20px;
+max-width:1100px;     /* prevents boxes from becoming too wide */
+margin:0 auto;        /* center grid */
+}
+
+/* CARD */
+.card{
+border:1px solid #333;
+padding:25px;
+height:320px;         /* FIXED HEIGHT → makes them taller */
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+}
+
+/* small number */
+.card span{
+font-size:12px;
+color:#777;
+letter-spacing:1px;
+}
+
+/* title */
+.card h3{
+font-size:18px;
+letter-spacing:2px;
+margin:5px 0 10px;
+}
+
+/* description */
+.card p{
+font-size:14px;
+color:#444;
+line-height:1.5;
+}
+
+/* HUMBLE BRAG SECTION */
+.brag{
+padding:100px 0;
+}
+
+/* header layout */
+.brag-header{
+position:relative;
+display:inline-block;   /* KEY: shrink to text width */
+margin-left:30%;
+}
+
+/* BIG TEXT */
+.brag-header h2{
+font-size:110px;
+font-weight:900;
+line-height:0.9;
+}
+
+/* SMALL TEXT — now sticks next to BRAG */
+.brag-sub{
+position:absolute;
+left:100%;              /* place right next to big text */
+top:60%;
+margin-left:20px;       /* small gap */
+font-size:12px;
+letter-spacing:2px;
+white-space:nowrap;
+}
+
+/* gallery */
+.brag-gallery{
+margin-top:60px;
+width:100vw;              /* full screen width */
+margin-left:calc(-50vw + 50%);  /* break out of container */
+}
+
+.brag-gallery img{
+width:100%;
+display:block;
+}
+
+/* AWARDS SECTION */
+.awards{
+padding:100px 0;
+}
+
+/* centered container */
+.awards-table{
+width:70%;
+margin:0 auto;
+}
+
+/* each row */
+.award-row{
+display:grid;
+grid-template-columns: 2fr 1.5fr 1.5fr 0.5fr;
+padding:20px 0;
+border-bottom:1px solid #ddd;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* first top border */
+.award-row:first-child{
+border-top:1px solid #ddd;
+}
+
+/* year alignment */
+.award-row .year{
+text-align:right;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+padding:80px 0;
+display:flex;
+justify-content:center;
+}
+
+.testimonial-box{
+width:85%;
+border:2px solid #333;
+}
+
+/* TOP BAR */
+.testimonial-top{
+display:flex;
+justify-content:space-between;
+padding:15px 20px;
+border-bottom:2px solid #333;
+font-size:12px;
+letter-spacing:1px;
+}
+
+/* CONTENT */
+.testimonial-content{
+display:grid;
+grid-template-columns: 1fr 1.2fr;
+align-items:center;
+}
+
+/* IMAGE */
+.testimonial-image img{
+width:100%;
+display:block;
+}
+
+/* TEXT */
+.testimonial-text{
+padding:40px;
+position:relative;
+}
+
+.quote-mark{
+font-size:80px;
+color:#ddd;
+position:absolute;
+top:10px;
+left:20px;
+}
+
+.testimonial-text p{
+font-size:18px;
+line-height:1.6;
+margin-top:40px;
+}
+
+/* BOTTOM NAV */
+.testimonial-bottom{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+border-top:2px solid #333;
+}
+
+.arrow{
+font-size:24px;
+cursor:pointer;
+}
+
+.counter{
+font-size:12px;
+letter-spacing:2px;
+}
+
+/* CLIENTS */
+.clients{
+text-align:center;
+padding:60px 0;
+}
+
+.clients-text{
+font-size:12px;
+letter-spacing:2px;
+margin-bottom:30px;
+color:#555;
+}
+
+.clients-logos{
+display:flex;
+justify-content:center;
+gap:60px;
+font-weight:700;
+opacity:0.7;
+}
+
+/* FAQ SECTION */
+.faq{
+padding:100px 0;
+}
+
+/* HEADER */
+.faq-header{
+position:relative;
+display:inline-block;   /* keeps small text close */
+margin-left:30%;
+}
+
+/* BIG TEXT */
+.faq-header h2{
+font-size:110px;
+font-weight:900;
+line-height:0.9;
+}
+
+/* SMALL TEXT (NEXT TO BIG TEXT) */
+.faq-sub{
+position:absolute;
+left:100%;
+top:60%;
+margin-left:20px;
+font-size:12px;
+letter-spacing:2px;
+white-space:nowrap;
+}
+
+/* LIST */
+.faq-list{
+width:60%;
+margin:80px auto 0;
+}
+
+/* ITEM */
+.faq-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+border-bottom:1px solid #ddd;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* PLUS SIGN */
+.faq-item span:last-child{
+font-size:18px;
+}
+
+
+/* ============================================================
+   MOBILE RESPONSIVE — 768px and below
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* HONORS SIDEBAR — hide on mobile, takes up space */
+  .honors {
+    display: none;
+  }
+
+  /* ── NAVBAR ── */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 12px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding-bottom: 160px; /* room for hero-bottom */
+  }
+
+  .hero-text {
+    font-size: 48px;
+    width: 100%;
+    margin-left: 0;
+    line-height: 1;
+  }
+
+  .hero-right {
+    position: static;
+    transform: none;
+    margin-top: 30px;
+  }
+
+  .hero-right p {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+
+  .footer-logos {
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    justify-content: center;
+  }
+
+  /* ── ABOUT ── */
+  .about {
+    min-height: auto;
+    padding: 80px 0;
+  }
+
+  .about-container {
+    flex-direction: column;
+    padding-left: 0;
+    gap: 16px;
+  }
+
+  .about-text {
+    font-size: 22px;
+    max-width: 100%;
+  }
+
+  /* ── WORK ── */
+  .work {
+    padding: 60px 0;
+    gap: 50px;
+  }
+
+  .work-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* On mobile, always put image below text */
+  .work-row img {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .work-text {
+    order: 1;
+    max-width: 100%;
+  }
+
+  /* ── PROJECTS ── */
+  .projects {
+    padding: 60px 0;
+  }
+
+  .projects-list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-item {
+    font-size: 40px;
+  }
+
+  .projects-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 40px;
+  }
+
+  .projects-bottom h2 {
+    font-size: 52px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* ── PROCESS ── */
+  .process {
+    padding: 40px 0;
+  }
+
+
+.process-grid{
+grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 100%;
+    padding: 0 4%;
+}
+  .card {
+    height: auto;
+    min-height: 200px;
+  }
+
+  /* ── HUMBLE BRAG ── */
+  .brag {
+    padding: 60px 0;
+  }
+
+  .brag-header {
+    margin-left: 0;
+    display: block;
+  }
+
+  .brag-header h2 {
+    font-size: 56px;
+  }
+
+  .brag-sub {
+    position: static;
+    margin-left: 0;
+    margin-top: 12px;
+    white-space: normal;
+    display: block;
+  }
+
+  /* ── AWARDS ── */
+  .awards {
+    padding: 60px 0;
+  }
+
+  .awards-table {
+    width: 100%;
+  }
+
+  .award-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 16px 0;
+    font-size: 12px;
+  }
+
+  .award-row .year {
+    text-align: left;
+    color: #888;
+  }
+
+  /* ── TESTIMONIAL ── */
+  .testimonial {
+    padding: 40px 0;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+
+  .testimonial-top {
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .testimonial-content {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-image img {
+    max-height: 260px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .testimonial-text {
+    padding: 40px 20px 30px;
+  }
+
+  .testimonial-text p {
+    font-size: 15px;
+  }
+
+  /* ── CLIENTS ── */
+  .clients-logos {
+    flex-wrap: wrap;
+    gap: 24px;
+    font-size: 13px;
+    justify-content: center;
+  }
+
+  /* ── FAQ ── */
+  .faq {
+    padding: 60px 0;
+  }
+
+  .faq-header {
+    margin-left: 0;
+    display: block;
+  }
+
+  .faq-header h2 {
+    font-size: 56px;
+  }
+
+  .faq-sub {
+    position: static;
+    margin-left: 0;
+    margin-top: 12px;
+    white-space: normal;
+    display: block;
+  }
+
+  .faq-list {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .faq-item {
+    font-size: 12px;
+    padding: 16px 0;
+  }
+
+}
+
+/* ============================================================
+   EXTRA SMALL — 480px and below
+   ============================================================ */
+@media (max-width: 480px) {
+
+  .hero-text {
+    font-size: 38px;
+  }
+
+  .about-text {
+    font-size: 18px;
+  }
+
+  .project-item {
+    font-size: 32px;
+  }
+
+  .projects-bottom h2 {
+    font-size: 40px;
+  }
+
+  .brag-header h2,
+  .faq-header h2 {
+    font-size: 44px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+}
